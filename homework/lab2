@@ -1,4 +1,4 @@
-public class HelloWorld
+public class lab2_fin
 {
 
      public static void main(String []args)
@@ -11,42 +11,43 @@ public class HelloWorld
         
         total = 0;
         
-        int[] subtotal = {0,0,0};
+        int subtotal = 0;
         
-        
-        
-       
         
         for(int i = 0; i < nmbrs.length; i++)
         {
+			subtotal = 0;
+			
+			System.out.println("");
             System.out.println("Row " + i + ":");
             
+			
           
             
            for(int it = 0; it < nmbrs[i].length; it++)
            {
                System.out.println(nmbrs[i][it]);
               
-            subtotal[i] = nmbrs[i][0] + nmbrs[i][1] +  nmbrs[i][2] +  nmbrs[i][3] +  nmbrs[i][4];
-              
-              total = nmbrs[i][it] + total;
-              
-              
-               
+          
+              total = nmbrs[i][it] + total;    
+
+			subtotal = nmbrs[i][it] + subtotal;
            }
            
-           if(subtotal[i] % 2 == 0)
+           if(subtotal % 2 == 0)
            {
-               System.out.println("Subtotal for row " + i + " " + subtotal[i] + ", and is " + oddeven[1]);
+               System.out.println("Subtotal for row " + i + " " + subtotal + ", and is " + oddeven[1] + ".");
            }
            else
            {
-               System.out.println("Subtotal for row " + i + " " + subtotal[i] + ", and is " + oddeven[0]);
+               System.out.println("Subtotal for row " + i + " " + subtotal + ", and is " + oddeven[0] + ".");
            }
-           
-          
-          
-           System.out.println("");
+		   
+		   
+		   
            
         }
-        
+		
+		System.out.println("Total: " + total);
+	 }
+}
