@@ -6,6 +6,9 @@ public class switch
 
 		int day = 4;
 
+
+	96	//
+964
 		// switch is being being used, different scenarious are given
 		// day is the variable that is being called on
 		switch (day) 
