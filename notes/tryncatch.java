@@ -5,11 +5,11 @@ public class tryncatch
 		System.out.println("Hello World");
 
 		// Java has something called try and catch code block
-		//
+		
 		// try statement allows you to define a block of code to be tested for errors while it is being executed
-		//
+
 		// catch statements allows you to define a block of code to be executed, if an error occurs in the try block.
-		//
+
 		
 		try
 		{
@@ -55,7 +55,7 @@ public class tryncatch
 		// ClassNotFoundException
 		// ArrayIndexOutOfBoundsException
 		// SecurityException
-		//
+
 		// Bellow will throw an acception if age is below 18 (Prints "Access denied") If age is 18 or older, prints "Access granted"
 		
 		/*
@@ -84,7 +84,6 @@ public class tryncatch
 		 }
 
 		 }
-
 		 */
 	}
 }
