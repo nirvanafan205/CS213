@@ -1,4 +1,4 @@
-public class switch 
+public class switch_ 
 {
 	public static void main(String[] args)
 	{
@@ -8,6 +8,7 @@ public class switch
 
 		// switch is being being used, different scenarious are given
 		// day is the variable that is being called on
+
 		switch (day) 
 		{
 			case 1:

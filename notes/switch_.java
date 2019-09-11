@@ -1,14 +1,17 @@
+import java.util.Scanner;
+
 public class switch_ 
 {
 	public static void main(String[] args)
 	{
-		System.out.println("Hello World");
+		System.out.println("Enter a number for a message between 1 - 7");
+		
+		Scanner myObj = new Scanner(System.in);
 
-		int day = 4;
+		int day = myObj.nextInt();
 
 		// switch is being being used, different scenarious are given
 		// day is the variable that is being called on
-
 		switch (day) 
 		{
 			case 1:
