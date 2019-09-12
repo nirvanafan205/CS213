@@ -6,7 +6,7 @@ public class lab03
 		return firstName + " " + lastName;
 	}
 
-	static void checkAge(int check)
+	static int checkAge(int check)
 	{
 
 		if(check >= 18)
@@ -27,7 +27,7 @@ public class lab03
 	{
 		System.out.println("Student Name: Lab03");
 	
-		concatName(Integer.parseInt(args[0]), Integer.parseInt(args[1]));
+		concatName();
 
 		checkAge()Integer.parseInt(args[2]);
 	}
