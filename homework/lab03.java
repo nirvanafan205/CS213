@@ -1,14 +1,13 @@
 public class lab03
 {
 
-	static String concatName(String firstName, String lastName)
+	static void concatName(String firstName, String lastName)
 	{
-		return firstName + " " + lastName;
+		System.out.printl("Hello " + firstName + " " + lastName);
 	}
 
-	static int checkAge(int check)
+	static void checkAge(int check)
 	{
-
 		if(check >= 18)
 		{
 			System.out.println("You are " + check + "years old.");
@@ -26,10 +25,13 @@ public class lab03
 	public static void main(String args[])
 	{
 		System.out.println("Student Name: Lab03");
-	
-		concatName();
 
-		checkAge();
+		firstName = args[0];
+		lastName = args[1];
+		check = args[3];
+	
+		concatName(firsName, lastName);
+
+		checkAge(check);
 	}
 }
-
