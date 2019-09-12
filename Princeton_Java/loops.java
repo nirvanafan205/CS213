@@ -70,93 +70,95 @@ public class loops
 
 		int weight = myObj.nextInt();
 
+		if(weight >= 0 || weight <= 112)
+		{
+			weight = 1;
+		}
+
+		else if(weight > 112 || weight <= 115)
+		{
+			weight = 2;
+		}
+
+		else if(weight > 115 || weight <= 118)
+		{
+			weight = 1;
+		}
+
+		else if(weight > 118 || weight <= 122)
+		{
+			weight = 3;
+		}
+
+		else if(weight > 122 || weight <= 126)
+		{
+			weight = 4;
+		}
+
+		else if(weight > 126 || weight <= 130)
+		{
+			weight = 5;
+		}
+
+		else if(weight > 131 || weight <= 135)
+		{
+			weight = 6;
+		}
+
+		else if(weight > 131 || weight <= 140)
+		{
+			weight = 7;
+		}
+
+		else if(weight > 140 || weight <= 147)
+		{
+			weight = 8;
+		}
+
+		else if(weight > 147 || weight <= 154)
+		{
+			weight = 9;
+		}
+
+		else if(weight > 154 || weight <= 160)
+		{
+			weight = 10;
+		}
+
+		else if(weight > 160 || weight <= 167)
+		{
+			weight = 11;
+		}
+
+		else if(weight > 167 || weight <= 175)
+		{
+			weight = 12;
+		}
+
+		else if(weight > 175 || weight <= 183)
+		{
+			weight = 13;
+		}
+
+		else if(weight > 183 || weight <= 190)
+		{
+			weight = 14;
+		}
+
+		else if(weight > 190 || weight <= 220)
+		{
+			weight = 15;
+		}
+
+		else if(weight > 220)
+		{
+			weight = 16;
+		}
+
 		switch (weight)
 		{
-			case 1:
-				if(weight >= 0 || weight <= 112)
-				{
-					System.out.println("Flyweight");
-				}
-			case 2:
-				if(weight > 112 || weight <= 115)
-				{
-					System.out.println("Super Flyweight");
-				}
-			case 3:
-				if(weight > 115 || weight <= 118)
-				{
-					System.out.println("Bantamweight");
-				}
-			case 4:
-				if(weight > 118 || weight <= 122)
-				{
-					System.out.println("Super bantamweight");
-				}
-			case 5:
-				if(weight > 122 || weight <= 126)
-				{
-					System.out.println("Featherweight");
-				}
-			case 6:
-				if(weight > 126 || weight <= 130)
-				{
-					System.out.println("Super featherweight");
-				}
-			case 7:
-				if(weight > 131 || weight <= 135)
-				{
-					System.out.println("Lightweight");
-				}
-			case 8:
-				if(weight > 131 || weight <= 140)
-				{
-					System.out.println("Super lightweight");
-				}
-			case 9:
-				if(weight > 140 || weight <= 147)
-				{
-					System.out.println("Welterweight");
-				}
-			case 10:
-				if(weight > 147 || weight <= 154)
-				{
-					System.out.println("Super Welterweight");
-				}
-			case 11:
-				if(weight > 154 || weight <= 160)
-				{
-					System.out.println("Middleweight");
-				}
-			case 12:
-				if(weight > 160 || weight <= 167)
-				{
-					System.out.println("Super Middleweight");
-				}
-			case 13:
-				if(weight > 167 || weight <= 175)
-				{
-					System.out.println("Light heavyweight");
-				}
-			case 14:
-				if(weight > 175 || weight <= 183)
-				{
-					System.out.println("Super Light heavyweight");
-				}
-			case 15:
-				if(weight > 183 || weight <= 190)
-				{
-					System.out.println("Cruiserweight");
-				}
-			case 16:
-				if(weight > 190 || weight <= 220)
-				{
-					System.out.println("Heavyweight");
-				}
-			case 17:
-				if(weight > 220)
-				{
-					System.out.println("Super heavyweight");
-				}
+
+
 		}
 	}
 

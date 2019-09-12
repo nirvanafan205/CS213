@@ -1,0 +1,85 @@
+		if(weight >= 0 || weight <= 112)
+		{
+			System.out.println("Flyweight");
+		}
+
+		else if(weight > 112 || weight <= 115)
+		{
+			System.out.println("Super Flyweight");
+		}
+
+		else if(weight > 115 || weight <= 118)
+		{
+			System.out.println("Bantamweight");
+		}
+
+		else if(weight > 118 || weight <= 122)
+		{
+			System.out.println("Super bantamweight");
+		}
+
+		else if(weight > 122 || weight <= 126)
+		{
+			System.out.println("Featherweight");
+		}
+
+		else if(weight > 126 || weight <= 130)
+		{
+			System.out.println("Super featherweight");
+		}
+
+		else if(weight > 131 || weight <= 135)
+		{
+			System.out.println("Lightweight");
+		}
+
+		else if(weight > 131 || weight <= 140)
+		{
+			System.out.println("Super lightweight");
+		}
+
+		else if(weight > 140 || weight <= 147)
+		{
+			System.out.println("Welterweight");
+		}
+
+		else if(weight > 147 || weight <= 154)
+		{
+			System.out.println("Super Welterweight");
+		}
+
+		else if(weight > 154 || weight <= 160)
+		{
+			System.out.println("Middleweight");
+		}
+
+		else if(weight > 160 || weight <= 167)
+		{
+			System.out.println("Super Middleweight");
+		}
+
+		else if(weight > 167 || weight <= 175)
+		{
+			System.out.println("Light heavyweight");
+		}
+
+		else if(weight > 175 || weight <= 183)
+		{
+			System.out.println("Super Light heavyweight");
+		}
+
+		else if(weight > 183 || weight <= 190)
+		{
+			System.out.println("Cruiserweight");
+		}
+
+		else if(weight > 190 || weight <= 220)
+		{
+			System.out.println("Heavyweight");
+		}
+
+		else if(weight > 220)
+		{
+			System.out.println("Super heavyweight");
+		}
+
