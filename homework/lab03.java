@@ -29,7 +29,7 @@ public class lab03
 	
 		concatName();
 
-		checkAge()Integer.parseInt(args[2]);
+		checkAge();
 	}
 }
 
