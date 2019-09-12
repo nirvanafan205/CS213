@@ -10,25 +10,56 @@ public class lab03
 	{
 		if(check >= 18)
 		{
-			System.out.println("You are " + check + "years old.");
+			System.out.println("You are " + check + " years old.");
 
-			System.out.println("You can vote");
+			System.out.println("You can vote.");
 		}
 		else
 		{
-			System.out.println("You are " + check + "years old.");
+			System.out.println("You are " + check + " years old.");
 
-			System.out.println("You can't vote");
+			System.out.println("You can't vote.");
 		}
 	}
 
 	public static void main(String args[])
 	{
-		System.out.println("Student Name: Lab03");
+		System.out.println("Student Name: Lab 03");
+		System.out.println();
 
-		String firstName = args[0];
-		String lastName = args[1];
-		int check = Integer.parseInt(args[3]);
+		String firstName = "";
+		String lastName = "";
+		int check = 0;
+
+		try
+		{
+			firstName = args[0];
+		}
+		catch (ArrayIndexOutOfBoundsException e)
+		{
+			System.out.println("Please submit first name, last name, and age when you run this program.");	
+			System.exit(0);
+		}
+
+		try
+		{
+			lastName = args[1];
+		}
+		catch (ArrayIndexOutOfBoundsException e)
+		{
+			System.out.println("Please submit last name and age when you run this program");
+			System.exit(0);
+		}
+
+		try
+		{
+			check = Integer.parseInt(args[2]);
+		}
+		catch (Exception e)
+		{
+			System.out.println("Please submit your age when you run this program.");
+			System.exit(0);
+		}
 
 		concatName(firstName, lastName);
 
