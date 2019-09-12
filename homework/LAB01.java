@@ -12,31 +12,31 @@ public class LAB01
 
 		System.out.println("nbr1 is " + nbr1);
 		System.out.println("nbr2 is " + nbr2);
-		System.out.println
+		System.out.println("");
 
-			if(sum % 2 == 1)
-			{
-				System.out.println("Odd");
-			}
-			else if(sum % 2 == 0)
-			{
-				System.out.println("Even");
-			}
+		if(sum % 2 == 1)
+		{
+			System.out.println("Odd");
+		}
+		else if(sum % 2 == 0)
+		{
+			System.out.println("Even");
+		}
 
 		nbr1 = 8;
 		sum = nbr1 + nbr2;
 
 		System.out.println("nbr1 is " + nbr1);
 		System.out.println("nbr2 is " + nbr2);
-		System.out.println
+		System.out.println("");
 
-			if(sum % 2 == 1)
-			{
-				System.out.println("Odd");
-			}
-			else if(sum % 2 == 0)
-			{
-				System.out.println("Even");
-			}
+		if(sum % 2 == 1)
+		{
+			System.out.println("Odd");
+		}
+		else if(sum % 2 == 0)
+		{
+			System.out.println("Even");
+		}
 	}
 }
