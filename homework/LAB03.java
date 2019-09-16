@@ -1,8 +1,11 @@
-public class LAB03
+public class lab03
 {
+	// something wrong with methods
+	// not being used
+	// add space to return it together with a space inbetween
 	static String concatName(String firstName, String lastName)
 	{
-		return firstName + lastName;
+		return firstName + " " + lastName;
 	}
 
 	static int checkAge(int age)
@@ -12,7 +15,9 @@ public class LAB03
 
 	public static void main(String[] args)
 	{
-		System.out.println("Student Name: Lab 03");
+		//changed Student Name: to Matthew Garcia
+
+		System.out.println("Matthew Garcia: Lab 03");
 		System.out.println();
 
 		String firstName = "";
