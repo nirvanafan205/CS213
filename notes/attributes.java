@@ -19,5 +19,11 @@ public class attributes
 		myObj.y = 40;
 
 		System.out.println(myObj.y);
+
+		// attributes can also override existing value
+
+		myObj.x = 30;
+
+		System.out.println(myObj.x); // was 3, now is 30
 	}
 }
