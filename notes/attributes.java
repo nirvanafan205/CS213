@@ -5,6 +5,12 @@ public class attributes
 	// they are variables within a class
 	int y;
 
+	//if you don't want the ability to override existing values
+	//declare the attribute as final
+	
+	// final x = 10;
+	// will generate an error: cannot assign a value to a final variable
+
 	public static void main(String[] args)
 	{
 		// attributes can be accessed by createing an object of the class
