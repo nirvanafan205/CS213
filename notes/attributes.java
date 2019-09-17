@@ -3,7 +3,7 @@ public class attributes
 	int x = 5;
 	// x and why are attributes of the class
 	// they are variables within a class
-	int y = 3;
+	int y;
 
 	public static void main(String[] args)
 	{
@@ -13,5 +13,11 @@ public class attributes
 		attributes myObj = new attributes();
 
 		System.out.println(myObj.x);
+
+		// they can also be motified
+
+		myObj.y = 40;
+
+		System.out.println(myObj.y);
 	}
 }
