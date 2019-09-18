@@ -14,6 +14,11 @@ public class classes
 		return name;
 	}
 
+	static int year(int x)
+	{
+		return x;
+	}
+
 	public static void main(String[] args)
 	{
 		System.out.println("Hello World \n");
@@ -32,7 +37,8 @@ public class classes
 
 		String car = myObj.next();
 
-		System.out.prinlnt(nameObj.car(car), nameobj.x);
+		System.out.prinlnt(nameObj.car(car));
 
+		System.out.println(year.x);
 	}
 }
