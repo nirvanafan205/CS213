@@ -2,22 +2,34 @@ import java.util.Scanner;
 
 public class classes
 {
-	static void asking (int number)
+	static int asking (int number)
 	{
-		System.out.println("What is your favorite number?");
+		return number;
 	}
 
+	public void car(String name)
+	{
+		return name;
+	}
 
-	public static void main(Stringp[] args)
+	public static void main(String[] args)
 	{
 		System.out.println("Hello World");
 
 		Scanner myObj = new Scanner(System.in);
 
+		classes nameObj = new classes();
+
 		int nmbr = myObj.nextInt();
 
-		asking(nmbr);
+		System.out.println("What is your favorite number? \n");
 
+		System.out.println(asking(nmbr));
+
+		System.out.println("What is your dream car? \n");
+
+		String car = myObj.next();
+
+		System.out.prinlnt(nameObj.car(car));
 	}
 }
-
