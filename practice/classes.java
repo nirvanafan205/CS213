@@ -2,7 +2,9 @@ import java.util.Scanner;
 
 public class classes
 {
-	int x = 2019
+	int x = 5;
+	int y;
+	int z = x + y;
 
 	static int asking (int number)
 	{
@@ -12,11 +14,6 @@ public class classes
 	public void car(String name)
 	{
 		return name;
-	}
-
-	static int year(int x)
-	{
-		return x;
 	}
 
 	public static void main(String[] args)
@@ -37,8 +34,13 @@ public class classes
 
 		String car = myObj.next();
 
-		System.out.prinlnt(nameObj.car(car));
+		System.out.println(nameObj.car(car));
 
-		System.out.println(year.x);
+		System.out.println("Enter a number m8");
+
+		y = nextInt();
+
+		System.out.println(myObj.z);
+
 	}
 }
