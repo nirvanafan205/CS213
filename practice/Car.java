@@ -1,9 +1,6 @@
 public class Car
 {
 	private car_brand;
-	private model;
-	private gas_milage;
-	private gas_tank;
 	
 	// getter
 		public String carType()
