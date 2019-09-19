@@ -4,7 +4,12 @@ public class Lab04
 	{
 		System.out.println("Matthew Garcia: Lab04");
 
-		Car myObj = Car();
+		Car myObj = new Car();
+		
+		Car[] cars = { new Car(), new Car() };
 
+		car[0].setcar_brand = "Ford";
+
+		car[1].setcar_brand = "Nissan";
 	}
 }
