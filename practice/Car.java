@@ -38,7 +38,7 @@ public class Car
 	// setter
 	public void setCar_milage(String milage)
 	{
-		this.car_brand = mileage;
+		this.car_gas = mileage;
 	}
 
 	// getter
@@ -48,7 +48,7 @@ public class Car
 	}
 
 	// setter
-	public void setBrand_name(String tank)
+	public void setCar_gas(String tank)
 	{
 		this.car_brand = tank;
 	}
