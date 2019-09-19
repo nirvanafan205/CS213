@@ -5,7 +5,7 @@ public class Car
 	private String car_gas;
 	private String car_gasTank;
 
-	// getter
+	// getter 1
 	public String getCar_brand()
 	{
 		return car_brand;
@@ -17,7 +17,7 @@ public class Car
 		this.car_brand = naming;
 	}
 
-	// getter
+	// getter 2
 	public String getCar_model()
 	{
 		return car_model;
@@ -29,19 +29,19 @@ public class Car
 		this.car_model = model;
 	}
 
-	// getter
+	// getter 3
 	public String getCar_gas()
 	{
 		return car_gas;
 	}
 
 	// setter
-	public void setCar_milage(String milage)
+	public void setCar_milage(String mileage)
 	{
 		this.car_gas = mileage;
 	}
 
-	// getter
+	// getter 4
 	public String getCar_gasTank()
 	{
 		return car_gasTank;
