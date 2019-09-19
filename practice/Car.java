@@ -5,14 +5,16 @@ public class Car
 	private gas_milage;
 	private gas_tank;
 	
+	// getter
 		public String carType()
 		{
 			return car_brand;
 		}
 
+	// setter
 		public void official_name(String naming)
 		{
-			this.car_brand = naming;
+			Car.car_brand = naming;
 		}
 
 }
