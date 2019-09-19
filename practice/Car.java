@@ -1,17 +1,17 @@
 public class Car
 {
-	private car_brand;
+	private String car_brand;
 	
 	// getter
-		public String carType()
+		public String getCar_brand()
 		{
 			return car_brand;
 		}
 
 	// setter
-		public void official_name(String naming)
+		public void setBrand_name(String naming)
 		{
-			Car.car_brand = naming;
+			this.car_brand = naming;
 		}
 
 }
