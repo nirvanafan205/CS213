@@ -15,13 +15,13 @@ public class Truck extends Vehicle
 		return weight;
 	}
 
-	public constructor(String truck_model, String truck_make)
+	public constructor(String truck_name, String truck_mod)
 	{
-		truck_model = nextLine();
+		truck_name =  truck_model;
 
-		truck_make = nextLine();
+		truck_mod = truck_make;
 	}
-
+/*
 	public void distance(String make, String model, int mileage, int tank)
 	{
 		System.out.println(make);
@@ -29,4 +29,5 @@ public class Truck extends Vehicle
 		System.out.println(mileage);
 		System.out.println(tank);
 	}
+	*/
 }
