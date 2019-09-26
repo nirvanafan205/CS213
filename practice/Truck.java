@@ -15,6 +15,13 @@ public class Truck extends Vehicle
 		return weight;
 	}
 
+	public constructor()
+	{
+		make = myObj.nextLine();
+		model = myObj.nextLine();
+
+	}
+
 	public void distance(String make, String model, int mileage, int tank)
 	{
 		System.out.println(make);

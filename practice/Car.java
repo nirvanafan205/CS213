@@ -27,8 +27,20 @@ public class Car extends Vehicle
 		return doors;
 	}
 
-	public distance()
+	public _constructors()
 	{
+		make = nextLine()
+		model = nextLine();
+	}
 
+	public void distance(String make, String model, int mileage, int tank)
+	{
+		System.out.println(make);
+
+		System.out.println(model);
+
+		System.out.println(mileage);
+
+		System.out.println(tank);
 	}
 }
