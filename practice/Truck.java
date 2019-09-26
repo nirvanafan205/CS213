@@ -15,11 +15,11 @@ public class Truck extends Vehicle
 		return weight;
 	}
 
-	public constructor()
+	public constructor(String truck_model, String truck_make)
 	{
-		make = myObj.nextLine();
-		model = myObj.nextLine();
+		truck_model = nextLine();
 
+		truck_make = nextLine();
 	}
 
 	public void distance(String make, String model, int mileage, int tank)

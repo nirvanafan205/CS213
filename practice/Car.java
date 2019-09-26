@@ -27,10 +27,10 @@ public class Car extends Vehicle
 		return doors;
 	}
 
-	public _constructors()
+	public _constructors(String car_make, String car_model)
 	{
-		make = nextLine()
-		model = nextLine();
+		car_make = nextLine();
+		car_model = nextLine();
 	}
 
 	public void distance(String make, String model, int mileage, int tank)

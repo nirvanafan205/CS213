@@ -6,9 +6,9 @@ public class Lab05
 	{
 		Scanner myObj = new Scanner(System.in);
 
-		Car caller = new Car();
+		Car caller = new Car(String car_name, String car_model);
 
-		Truck other_caller = new Truck();
+		Truck other_caller = new Truck(String truck_model, String truck_make);
 
 
 		System.out.println("Enter car make");
@@ -54,6 +54,7 @@ public class Lab05
 		System.out.println("What tonage can the " + model + " carry?");
 
 		int truck_weight = nextInt();
+
 
 	}
 }
