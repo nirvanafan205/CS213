@@ -1,10 +1,10 @@
-public class Car
+abstract class Car
 {
-	private String make;
-	private String model;
+	protected String make;
+	protected String model;
 
-	private int mileage;
-	private int tank;
+	protected int mileage;
+	protected int tank;
 
 	// setter 1
 	public void setName(String make)
