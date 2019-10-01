@@ -1,8 +1,19 @@
-public static void lab02
+public class lab02
 {
 	public static void main(String[] args)
 	{
-		System.out.println("Hello World");
+		int[][] 2darray = { {1, 2, 3, 4, 5}
+			{6, 7, 8, 9, 10}
+			{11, 12, 13, 14, 15}
+		}
+
+		int subtotal, total;
+		String oddeven;
+
+		for(int i = 0; i < 2darray.length; i++)
+		{
+			System.out.println(i);
+		}
+
 	}
 }
-
