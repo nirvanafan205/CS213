@@ -1,40 +1,64 @@
-class Car extends Vehicle
+public class Car
 {
-	private String top_type;
+	private String make;
+	private String model;
 
-	private int car_doors;
+	private int mileage;
+	private int tank;
 
-	// setter top
-	
-	public void setTop(String top_type)
+	// setter 1
+	public void setName(String make)
 	{
-		this.top_type = top_type;
+		this.make = make;
 	}
 
+	// getter 1
 	public String getName()
 	{
-		return top_type;
+		return make;
 	}
 
-	public void setCar_d(int car_doors)
+	// setter 2
+
+	public void setMod(String model)
 	{
-		this.car_doors = car_doors;
+		this.model = model;
 	}
 
-	public int setCar_d()
+	// getter 2
+	public String getMod()
 	{
-		return car_doors;
+		return model;
 	}
 
-	public Car(String car_make, String car_model)
+	// setter 3
+	public void setMile(int mileage)
 	{
-		make = car_make;
-		model = car_model;
+		this.mileage = mileage;
 	}
 
-	public void car_distance()
+	// getter 3
+	public int getMile()
 	{
-		System.out.println(make + " " + model + " with " + car_doors + " doors and " + top_type + " top holds " + tank + " gallons and gets " + mileage + " mpg.");
-		System.out.printf(make + " " + model + " " + car_doors + "-door");
+		return mileage;
+	}
+
+	// setter 4
+	public void setGas(int tank)
+	{
+		this.tank = tank;
+	}
+
+	// getter 4 
+	public int getGas()
+	{
+		return tank;
+	}
+
+	public void calculations(int mileage, int tank)
+	{
+		int calc = mileage * tank;
+
+		System.out.println(" can travel " + calc + " miles on a tank of gas.");
 	}
 }
