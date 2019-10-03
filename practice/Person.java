@@ -1,7 +1,7 @@
 public class Person
 {
-	private fname;
-	private lname;
+	private String fname;
+	private String lname;
 
 	public void String setFirst(String fname)
 	{
