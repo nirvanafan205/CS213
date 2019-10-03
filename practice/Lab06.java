@@ -4,36 +4,39 @@ public class Lab06
 {
 	public static void main(String[] args)
 	{
-		System.out.println("Matthew Garcia: Lab06");
+		System.out.println("Matthew Garcia: Lab06 \n");
 
 		Scanner myObj = new Scanner(System.in);
 
-		Student id = {new Student(123), new Student(234)  };
-
-		Student calling = new Student();
-
+		Student id[] = {new Student(), new Student()  };
+		id[0].setID(123);
+		id[1].setID(234);
+		
 		for(int i = 0; i < id.length; i++)
 		{
-			System.out.println("Enter Student " + id[i] + " first name:");
+			System.out.println("Enter Student " + id[i].getID() + " first name:");
 			String fname = myObj.nextLine();
-			calling.setFirst(fname);
+			id[i].setFirst(fname);
 			
-			System.out.prinln("Enter Student " + id[i] + " last name:");
+			System.out.println("Enter Student " + id[i].getID() + " last name:");
 			String lname = myObj.nextLine();
-			calling.setLast(lname);
+			id[i].setLast(lname);
 
-			System.out.println("Enter Student " + id[i] + " year:");
+			System.out.println("Enter Student " + id[i].getID() + " year:");
 			String school_year = myObj.nextLine();
-			calling.setYear(school_year);
+			id[i].setYear(school_year);
 
-			System.out.println("Enter Student " + id[i] + " major:");
+			System.out.println("Enter Student " + id[i].getID() + " major:");
 			String major = myObj.nextLine();
-			calling.setMajor(major);
+			id[i].setMajor(major);
+			
+				System.out.println("\n");
 		}
 
-		for(int i = 0; i < id.length; i++)
-		{
-			[i]calling.display();
-		}
+			for(int i = 0; i < id.length; i++)
+			{
+				id[i].display();
+			}
+
 	}
 }
