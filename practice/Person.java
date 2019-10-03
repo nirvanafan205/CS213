@@ -3,22 +3,22 @@ public class Person
 	private String fname;
 	private String lname;
 
-	public void String setFirst(String fname)
+	public void setFirst(String fname)
 	{
 		this.fname = fname;
 	}
 
-	public void getFirst()
+	public String getFirst()
 	{
 		return fname;
 	}
 
-	public void String setLast(String lname)
+	public void  setLast(String lname)
 	{
 		this.lname = lname;
 	}
 
-	public void getLast()
+	public String getLast()
 	{
 		return lname;
 	}
