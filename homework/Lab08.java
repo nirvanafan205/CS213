@@ -50,26 +50,46 @@ public class Lab08
 				scores.add(input);
 			}							
 
-			System.out.println("\nRemoving the lowest score and highest score...\nHere are your scores for " + students.get(names) );
-
-			Collections.reverse(scores);
-
+			int max = scores.get(0);
+			int min = scores.get(0);
 
 			for(int z = 0; z < scores.size(); z++)
 			{
-
 				if(scores.get(z) > max)
 				{
-					scores.get(z) = max;
+					max = scores.get(z);
 				}
-
-				if(scores.get(z) > min)
+				else if(scores.get(z) < min)
 				{
-					scores.get(z) = min;
+					min = scores.get(z);
 				}
-
-				System.out.println(scores.get(z) );
 			}
+
+			for(int highest = 0; highest < scores.size(); highest++)
+			{
+				if(scores.get(highest).equals(max) )
+				{
+					scores.remove(highest);
+				}
+			}
+
+			for(int lowest = 0; lowest < scores.size(); lowest++)
+			{
+				if(scores.get(lowest).equals(min) )
+				{
+					scores.remove(lowest);
+				}
+			}
+
+			System.out.println("Removing the lowest score and highest score...\nHere are your scores for " + students.get(names) );
+
+			Collections.reverse(scores);
+
+			for(int m = 0; m < scores.size(); m++)
+			{
+				System.out.println(scores.get(m) );
+			}
+
 			scores.clear();
 		}
 	}	
