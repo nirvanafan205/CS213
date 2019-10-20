@@ -79,14 +79,15 @@ public class Lab08
 				{
 					scores.remove(lowest);
 				}
+
 			}
 
 			System.out.println("Removing the lowest score and highest score...\nHere are your scores for " + students.get(names) );
 
 			Collections.reverse(scores);
-
 			for(int m = 0; m < scores.size(); m++)
 			{
+
 				System.out.println(scores.get(m) );
 			}
 
