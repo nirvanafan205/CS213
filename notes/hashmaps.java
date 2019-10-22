@@ -17,14 +17,14 @@ public class hasmaps
 		Millermac.put("Blue Side Park", "Missed Calls");
 		Millermac.put("Macadelic", "Clarity");
 
-		System.out.println(Millermac);
+		System.out.println(Millermac + "\n");
 		// will print {GO:OD AM=Perfect Circle / God SPeed, Macadelic=Clarity, Blue Side Park=Missed Calls, Swimming=Self Care}
 
 		// to access a value of hashmap
 		// use .get(); 
 		// key_name.get(value);
 
-		System.out.println(Millermac.get("GO:OD AM") );
+		System.out.println(Millermac.get("GO:OD AM") + "\n" );
 		// will print out "Perfect Circle / God Speed"
 
 		// to remove all items, use .clear();
@@ -32,7 +32,7 @@ public class hasmaps
 
 		Millermac.clear();
 
-		System.out.println(Millermac); // will only print {}
+		System.out.println(Millermac + "\n"); // will only print {}
 
 		// to see how many items are in the HashMap
 		// .size()
@@ -46,8 +46,10 @@ public class hasmaps
 
 		// looping through has maps have two options, one for keys and values
 
+		System.out.println("\n");
+
 		// .keySet()
-		for(String i : MillerMac.keySet() ) // ask what order will it be printing
+		for(String i : Millermac.keySet() ) // ask what order will it be printing
 		{
 			System.out.println(i); 
 			// Will print
@@ -56,6 +58,8 @@ public class hasmaps
 			// Blue Side Park"
 			// Macadelic"
 		}
+
+		System.out.println("\n");
 
 		// .values()
 		for(String z : Millermac.values() )  // ask what order will it be printing
@@ -68,8 +72,9 @@ public class hasmaps
 			// "Clarity"
 		}
 
-		//to print both keys and values
+		System.out.println("\n");
 
+		//to print both keys and values
 		for(String b : Millermac.keySet() )
 		{
 			System.out.println("key: " + b + " value: " + Millermac.get(b) );
