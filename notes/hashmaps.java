@@ -38,7 +38,7 @@ public class hasmaps
 		// .size()
 		// key_name.size();
 
-		System.out.println(Millermac.size() ); // will print 0
+		System.out.println(Millermac.size() + "\n"); // will print 0
 
 		Millermac.put("GO:OD AM", "Perfect Circle / God Speed");
 		Millermac.put("Swimming", "Self Care");
