@@ -78,5 +78,21 @@ public class hasmaps
 		{
 			System.out.println("key: " + b + " value: " + Millermac.get(b) );
 		}
+
+		// Hashmaps can also have a key being one type and the value being another type
+		HashMap<String, Integer> albums = new HashMap<String, Integer>();
+
+		// adding the album and the year it came out in
+		albums.put("The Slim Shady LP", 1999);
+		albums.put("The Eminem Show", 2002);
+		albums.put("Relapes", 2009);
+		albums.put("Recovery", 2010);
+		albums.put("Encore", 2004);
+
+		//looping through each with the key name first then the year it came out in
+		for(String z : albums.keySet() )
+		{
+			System.out.println("key: " + z + " values: " + albums.gete(z) );
+		}
 	}
 }
