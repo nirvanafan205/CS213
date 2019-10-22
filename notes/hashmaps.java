@@ -3,20 +3,27 @@ import java.util.HashMap; // to be able to use hashmaps, must import it
 // can have string/integer types and values
 // I.e String "string value" 
 // int 0100110
-class hasmaps
+public class hasmaps
 {
 	public static void main(String[] args)
 	{
 		//Created a HashMap object called Millermac
 
-		HashMap<String, String> Millermac = HashMap<String, String>();
-		// Adding keys and Values (album, song)
+		HashMap<String, String> Millermac = new HashMap<String, String>();
+		// Adding keys and Values (album name, song)
 
-		Millermac.put("GO:OD AM", "Perfect Circle / God SPeed");
+		Millermac.put("GO:OD AM", "Perfect Circle / God Speed");
 		Millermac.put("Swimming", "Self Care");
 		Millermac.put("Blue Side Park", "Missed Calls");
 		Millermac.put("Macadelic", "Clarity");
 
 		System.out.println(Millermac);
+		// will print {GO:OD AM=Perfect Circle / God SPeed, Macadelic=Clarity, Blue Side Park=Missed Calls, Swimming=Self Care}
+		
+		// to access a value of hashmap
+		
+		System.out.println(Millermac.get("GO:OD AM") );
+		// will print out "Perfect Circle / God Speed"
+
 	}
 }
