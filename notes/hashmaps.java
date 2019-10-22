@@ -39,14 +39,13 @@ public class hasmaps
 		// key_name.size();
 
 		System.out.println(Millermac.size() ); // will print 0
+
 		Millermac.put("GO:OD AM", "Perfect Circle / God Speed");
 		Millermac.put("Swimming", "Self Care");
 		Millermac.put("Blue Side Park", "Missed Calls");
 		Millermac.put("Macadelic", "Clarity");
 
 		// looping through has maps have two options, one for keys and values
-
-		System.out.println("\n");
 
 		// .keySet()
 		for(String i : Millermac.keySet() ) // ask what order will it be printing
