@@ -47,7 +47,7 @@ public class hasmaps
 		// looping through has maps have two options, one for keys and values
 
 		// .keySet()
-		for(String i : MillerMac.keySet() )
+		for(String i : MillerMac.keySet() ) // ask what order will it be printing
 		{
 			System.out.println(i); 
 			// Will print
@@ -58,7 +58,7 @@ public class hasmaps
 		}
 
 		// .values()
-		for(String z : Millermac.values() )
+		for(String z : Millermac.values() )  // ask what order will it be printing
 		{
 			System.out.println(z);
 			// Will print 
@@ -66,6 +66,13 @@ public class hasmaps
 			// "Self Care"
 			// "Missed Calls"
 			// "Clarity"
+		}
+
+		//to print both keys and values
+
+		for(String b : Millermac.keySet() )
+		{
+			System.out.println("key: " + b + " value: " + Millermac.get(b) );
 		}
 	}
 }
