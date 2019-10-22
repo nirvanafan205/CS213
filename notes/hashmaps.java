@@ -32,7 +32,13 @@ public class hasmaps
 		
 		Millermac.clear();
 
-		System.out.prinln(Millermac); // will only print {}
+		System.out.println(Millermac); // will only print {}
+		
+		// to see how many items are in the HashMap
+		// .size()
+		// key_name.size();
+
+		System.out.println(Millermac.size() );
 
 	}
 }
