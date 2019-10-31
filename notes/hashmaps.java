@@ -3,12 +3,15 @@ import java.util.HashMap; // to be able to use hashmaps, must import it
 // can have string/integer types and values
 // I.e String "string value" 
 // int 0100110
+
+import java.util.TreeMap;
+import java.util.Map;
+
 public class hasmaps
 {
 	public static void main(String[] args)
 	{
 		//Created a HashMap object called Millermac
-
 		HashMap<String, String> Millermac = new HashMap<String, String>();
 		// Adding keys and Values (album name, song)
 
@@ -29,7 +32,6 @@ public class hasmaps
 
 		// to remove all items, use .clear();
 		// key_name.clear();
-
 		Millermac.clear();
 
 		System.out.println(Millermac + "\n"); // will only print {}
@@ -37,7 +39,6 @@ public class hasmaps
 		// to see how many items are in the HashMap
 		// .size()
 		// key_name.size();
-
 		System.out.println(Millermac.size() + "\n"); // will print 0
 
 		Millermac.put("GO:OD AM", "Perfect Circle / God Speed");
@@ -96,5 +97,15 @@ public class hasmaps
 		{
 			System.out.println("key: " + z + " values: " + albums.get(z) );
 		}
+
+		// will order it by key
+		Map<String, String> sorted = new TreeMap<String, String>(Millermac);
+
+		// Will be ordered by the key in alphabetical order
+		for(String z : sorted.keySet())
+		{
+			System.out.println("key: " + z + "value: " + sorted.get(z) );
+		}
+
 	}
 }
