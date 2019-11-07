@@ -50,7 +50,7 @@ public class Lab10
 			System.out.println(schools.get(j) );
 		}
 
-		System.out.println("HashMap \n How many departments do you want to enter?");
+		System.out.println("HashMap \nHow many departments do you want to enter?");
 		int departments_amount = nmbrs.nextInt();
 
 		for(int d = 0; d < departments_amount; d++)
@@ -66,7 +66,7 @@ public class Lab10
 			department.put(dep_name + " chair is", dep_chair);
 		}
 
-		System.out.println("Here are your department chars");
+		System.out.println("\nHere are your department chars");
 
 		Map<String, String> sorted = new TreeMap<String,String>(department);
 
