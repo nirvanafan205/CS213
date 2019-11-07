@@ -4,6 +4,14 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
 
+enum colors
+{
+	CYAN,
+	MAGENTO,
+	YELLOW,
+	BLACK
+}
+
 public class Lab10
 {
 	public static void main(String[] args)
@@ -17,17 +25,9 @@ public class Lab10
 
 		System.out.println("Toner:");
 
-		enum colors
+		for(colors n : colors.values() )
 		{
-			CYAN,
-			MAGENTO,
-			YELLOW,
-			BLACK
-		}
-
-		for(String n : colors.values() )
-		{
-			System.out.println(n.toString() );
+			System.out.println(n);
 		}
 
 		System.out.println("ArrayList");
@@ -37,7 +37,7 @@ public class Lab10
 		for(int i = 0; i < school_amount; i++)
 		{
 			System.out.println("Enter a college name");
-			
+
 			String school_name = strings.nextLine();
 		}
 
@@ -65,9 +65,12 @@ public class Lab10
 		}
 
 		System.out.println("Here are your department chars");
-		for(String m : department.value() )
+
+		Map<String, String> sorted = new TreeMap<String,String>(department);
+
+		for(String m : sorted.keySet() )
 		{
-			System.out.println(m + department.value(m) );
+			System.out.println(m + sorted.get(m) );
 		}
 	}
 }
