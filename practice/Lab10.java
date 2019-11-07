@@ -50,7 +50,7 @@ public class Lab10
 			System.out.println(schools.get(j) );
 		}
 
-		System.out.println("HashMap \nHow many departments do you want to enter?");
+		System.out.println("\nHashMap \nHow many departments do you want to enter?");
 		int departments_amount = nmbrs.nextInt();
 
 		for(int d = 0; d < departments_amount; d++)
