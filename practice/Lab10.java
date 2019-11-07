@@ -56,78 +56,77 @@ class Student implements Major, Deposit
 		System.out.println("Student " + " deposit: " + deposit);
 	}
 
-public class Lab10
-{
-	public static void main(String[] args)
+	public class Lab10
 	{
-		System.out.println("Matthew Garcia: Lab10 \n");
-		Scanner nmbrs = new Scanner(System.in);
-		Scanner strings = new Scanner(System.in);
-
-		Student info[] = { new Student(), new Student() };
-		info[0].setStudent(Music, 25);
-		info[1].setStudent(Math, 50);
-
-		for(int zoomer = 0; zoomer < info.length; zoomer++)
+		public static void main(String[] args)
 		{
-			info[i].display();
-		}
+			System.out.println("Matthew Garcia: Lab10 \n");
+			Scanner nmbrs = new Scanner(System.in);
+			Scanner strings = new Scanner(System.in);
 
-		ArrayList<String> schools = new ArrayList<String>();
-		HashMap<String, String> department = new HashMap<String, String>();
+			Student info[] = { new Student(), new Student() };
+			info[0].setStudent(Music, 25);
+			info[1].setStudent(Math, 50);
 
-		Student things
+			for(int zoomer = 0; zoomer < info.length; zoomer++)
+			{
+				info[i].display();
+			}
 
-		System.out.println("Toner:");
+			ArrayList<String> schools = new ArrayList<String>();
+			HashMap<String, String> department = new HashMap<String, String>();
 
-		for(colors n : colors.values() )
-		{
-			System.out.println(n);
-		}
+			System.out.println("Toner:");
 
-		System.out.println("\nArrayList:");
-		System.out.println("How many schools do you want to enter?");
-		int school_amount = nmbrs.nextInt();
+			for(colors n : colors.values() )
+			{
+				System.out.println(n);
+			}
 
-		for(int i = 0; i < school_amount; i++)
-		{
-			System.out.println("Enter a college name:");
+			System.out.println("\nArrayList:");
+			System.out.println("How many schools do you want to enter?");
+			int school_amount = nmbrs.nextInt();
 
-			String school_name = strings.nextLine();
+			for(int i = 0; i < school_amount; i++)
+			{
+				System.out.println("Enter a college name:");
 
-			schools.add(school_name);
-		}
+				String school_name = strings.nextLine();
 
-		System.out.println("\nHere are your colleges");
+				schools.add(school_name);
+			}
 
-		for(int j = 0; j < schools.size(); j++)
-		{
-			System.out.println(schools.get(j) );
-		}
+			System.out.println("\nHere are your colleges");
 
-		System.out.println("\nHashMap: \nHow many departments do you want to enter?");
-		int departments_amount = nmbrs.nextInt();
+			for(int j = 0; j < schools.size(); j++)
+			{
+				System.out.println(schools.get(j) );
+			}
 
-		for(int d = 0; d < departments_amount; d++)
-		{
-			System.out.println("Enter the department name:");
+			System.out.println("\nHashMap: \nHow many departments do you want to enter?");
+			int departments_amount = nmbrs.nextInt();
 
-			String dep_name = strings.nextLine();
+			for(int d = 0; d < departments_amount; d++)
+			{
+				System.out.println("Enter the department name:");
 
-			System.out.println("Enter the name of the department chair");
+				String dep_name = strings.nextLine();
 
-			String dep_chair = strings.nextLine();
+				System.out.println("Enter the name of the department chair");
 
-			department.put(dep_name + " chair is ", dep_chair);
-		}
+				String dep_chair = strings.nextLine();
 
-		System.out.println("\nHere are your department chars");
+				department.put(dep_name + " chair is ", dep_chair);
+			}
 
-		Map<String, String> sorted = new TreeMap<String,String>(department);
+			System.out.println("\nHere are your department chars");
 
-		for(String m : sorted.keySet() )
-		{
-			System.out.println(m + sorted.get(m) );
+			Map<String, String> sorted = new TreeMap<String,String>(department);
+
+			for(String m : sorted.keySet() )
+			{
+				System.out.println(m + sorted.get(m) );
+			}
 		}
 	}
 }
