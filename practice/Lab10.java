@@ -55,6 +55,7 @@ class Student implements Major, Deposit
 		System.out.println("Student " + " major: " + major);
 		System.out.println("Student " + " deposit: " + deposit);
 	}
+}
 
 	public class Lab10
 	{
@@ -70,7 +71,7 @@ class Student implements Major, Deposit
 
 			for(int zoomer = 0; zoomer < info.length; zoomer++)
 			{
-				info[i].display();
+				info[zoomer].display();
 			}
 
 			ArrayList<String> schools = new ArrayList<String>();
