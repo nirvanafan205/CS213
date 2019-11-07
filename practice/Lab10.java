@@ -12,6 +12,50 @@ enum colors
 	BLACK
 }
 
+interface Major
+{
+	public String getMajor();
+	public void setMajor(String major);
+}
+
+interface Deposit
+{
+	public int getDeposit();
+	public void setDeposit(int deposit);
+}
+
+class Student implements Major, Deposit
+{
+	private String major;
+	private int deposit;
+
+	public void setMajor(String name)
+	{
+		this.major = name;
+	}
+
+	public String getMajor()
+	{
+		return major;
+	}
+
+	public void setDeposit(int money)
+	{
+		this.deposit = money;
+	}
+
+	public Student(String name, int money)
+	{
+		major = name;
+		deposit = money;
+	}
+
+	public void display()
+	{
+		System.out.println("Student " + " major: " + major);
+		System.out.println("Student " + " deposit: " + deposit);
+	}
+
 public class Lab10
 {
 	public static void main(String[] args)
@@ -20,8 +64,19 @@ public class Lab10
 		Scanner nmbrs = new Scanner(System.in);
 		Scanner strings = new Scanner(System.in);
 
+		Student info[] = { new Student(), new Student() };
+		info[0].setStudent(Music, 25);
+		info[1].setStudent(Math, 50);
+
+		for(int zoomer = 0; zoomer < info.length; zoomer++)
+		{
+			info[i].display();
+		}
+
 		ArrayList<String> schools = new ArrayList<String>();
 		HashMap<String, String> department = new HashMap<String, String>();
+
+		Student things
 
 		System.out.println("Toner:");
 
@@ -63,7 +118,7 @@ public class Lab10
 
 			String dep_chair = strings.nextLine();
 
-			department.put(dep_name + " chair is", dep_chair);
+			department.put(dep_name + " chair is ", dep_chair);
 		}
 
 		System.out.println("\nHere are your department chars");
