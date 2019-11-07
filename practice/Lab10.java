@@ -30,7 +30,7 @@ public class Lab10
 			System.out.println(n);
 		}
 
-		System.out.println("\nArrayList");
+		System.out.println("\nArrayList:");
 		System.out.println("How many schools do you want to enter?");
 		int school_amount = nmbrs.nextInt();
 
@@ -50,7 +50,7 @@ public class Lab10
 			System.out.println(schools.get(j) );
 		}
 
-		System.out.println("\nHashMap \nHow many departments do you want to enter?");
+		System.out.println("\nHashMap: \nHow many departments do you want to enter?");
 		int departments_amount = nmbrs.nextInt();
 
 		for(int d = 0; d < departments_amount; d++)
