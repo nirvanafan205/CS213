@@ -20,7 +20,7 @@ public class Lab10
 		Scanner nmbrs = new Scanner(System.in);
 		Scanner strings = new Scanner(System.in);
 
-		ArrayList<String> schools = new ArrayList();
+		ArrayList<String> schools = new ArrayList<String>();
 		HashMap<String, String> department = new HashMap<String, String>();
 
 		System.out.println("Toner:");
@@ -30,22 +30,24 @@ public class Lab10
 			System.out.println(n);
 		}
 
-		System.out.println("ArrayList");
-		System.out.println("How many schools do you want to enter");
+		System.out.println("\nArrayList");
+		System.out.println("How many schools do you want to enter?");
 		int school_amount = nmbrs.nextInt();
 
 		for(int i = 0; i < school_amount; i++)
 		{
-			System.out.println("Enter a college name");
+			System.out.println("Enter a college name:");
 
 			String school_name = strings.nextLine();
+
+			schools.add(school_name);
 		}
 
-		System.out.println("Here are your colleges");
+		System.out.println("\nHere are your colleges");
+
 		for(int j = 0; j < schools.size(); j++)
 		{
-
-			System.out.println(schools.get(j);
+			System.out.println(schools.get(j) );
 		}
 
 		System.out.println("HashMap \n How many departments do you want to enter?");
@@ -57,7 +59,7 @@ public class Lab10
 
 			String dep_name = strings.nextLine();
 
-			System.out.prinln("Enter the name of the department chair");
+			System.out.println("Enter the name of the department chair");
 
 			String dep_chair = strings.nextLine();
 
